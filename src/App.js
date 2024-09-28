@@ -1,6 +1,5 @@
 import React from 'react';
-import TrendingRepos from './components/TrendingRepos'; // Import TrendingRepos component
-
+import TrendingRepos from './components/TrendingRepos'; 
 function App() {
   return (
     <div>
