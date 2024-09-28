@@ -1,21 +1,25 @@
+/* App.css */
+
 body {
-  @apply font-sans text-gray-800 m-0 p-0; 
-  background-color: #001f3f; 
+  @apply font-sans text-gray-800 m-0 p-0;
+  background-color: #001f3f;
   color: white;
 }
 
 .container {
-  @apply max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10; 
+  @apply max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10;
+} /* Missing closing bracket added here */
 
 h1 {
-  @apply text-4xl font-bold text-center mb-6 text-blue-600; 
+  @apply text-4xl font-bold text-center mb-6 text-blue-600;
 }
 
 input[type="text"] {
-  @apply w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 transition duration-200; 
+  @apply w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 transition duration-200;
+} /* Missing closing bracket added here */
 
 ul {
-  @apply list-none p-0; 
+  @apply list-none p-0;
 }
 
 ul li {
@@ -23,39 +27,41 @@ ul li {
 }
 
 ul li a {
-  @apply text-blue-600 font-semibold hover:text-blue-800; 
+  @apply text-blue-600 font-semibold hover:text-blue-800;
 }
 
+/* Pagination component */
 .pagination {
   @apply flex justify-center mt-4;
 }
 
 .pagination li {
-  @apply bg-white border border-gray-300 rounded-md p-2 mx-1 cursor-pointer transition-all duration-200; 
+  @apply bg-white border border-gray-300 rounded-md p-2 mx-1 cursor-pointer transition-all duration-200;
 }
 
 .pagination li:hover:not(.active) {
-  @apply bg-gray-200; 
+  @apply bg-gray-200;
 }
 
 .pagination li.active {
-  @apply bg-blue-500 text-white; 
+  @apply bg-blue-500 text-white;
 }
 
+/* Add responsiveness */
 @media (max-width: 600px) {
   .container {
-    @apply w-full p-4; 
+    @apply w-full p-4;
   }
 
   h1 {
-    @apply text-3xl; 
+    @apply text-3xl;
   }
 
   input[type="text"] {
-    @apply p-2; 
+    @apply p-2;
   }
 
   .pagination li {
-    @apply p-1; 
+    @apply p-1;
   }
 }
